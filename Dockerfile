@@ -4,7 +4,7 @@ FROM curlimages/curl:latest as metrics
 WORKDIR /metrics/
 USER root
 RUN mkdir -p /metrics/
-RUN curl -o nats-exporter.tar.gz -L https://github.com/nats-io/prometheus-nats-exporter/releases/download/v0.15.0/prometheus-nats-exporter-v0.15.0-linux-amd64.tar.gz
+RUN curl -o nats-exporter.tar.gz -L https://github.com/nats-io/prometheus-nats-exporter/releases/download/v0.15.0/prometheus-nats-exporter-v0.15.0-linux-arm64.tar.gz
 RUN tar zxvf nats-exporter.tar.gz
 RUN mv prometheus-nats-exporter*/prometheus-nats-exporter ./
 
